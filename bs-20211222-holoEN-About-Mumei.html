@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
 
     <title>Nanashi Mumei</title>
     <style>
@@ -19,9 +20,6 @@
     	}
     	.mylist{
     		list-style: none;
-    	}
-    	.img{
-    		height: 320px;
     	}
     </style>
   </head>
@@ -63,25 +61,24 @@
 	    </ul>
 	  </div>
 	</nav>
-	<div class="banner bg-cover" style="background-image: url(images/holo-en-bar-1.jpg);"></div>
+	<div class="banner bg-cover" style="background-image: url(images/holoen-2.png);"></div>
 	<div class="container my-3">
-		<h3 class="text-danger font-weight-bold">|成員介紹<small class="text-muted font-weight-bold">Member</small></h3>
+		<h3 class="text-danger font-weight-bold wow animate__backInLeft" data-wow-duration="3s">|成員介紹<small class="text-muted font-weight-bold">Member</small></h3>
 		<div class="row mt-5">
 			<div class="col-md-8">
-				<div class="img bg-cover" style="background: url(images/Mumei.jpg) no-repeat center top ; height: 560px;"></div>
+				<img src="images/Mumei.jpg" alt="" class="img-fluid wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="100">
 			</div>
 			<div class="col-md-4">
 				<div class="text">
-					<h1>七詩無名(Nanashi Mumei)</h1>
-					<p>出生: 8月4日</p>
-					<p>身高: 156 公分</p>
-					<p>實況類型: <span class="badge badge-danger">模擬類遊戲</span><span class="badge badge-warning">建設類遊戲</span><span class="badge badge-info">節奏遊戲</span></p>
-					<p>介紹: 非常健忘的屬性（鳥的記憶）。可愛治癒的貓頭鷹，聲音十分可愛，擁有討人喜歡的呆萌特質，唱歌如排毒後的<a href="bs-20211222-holoEN-About-Gura.html" target="_blank">Gura</a>十分可愛，MC中是樹莓狂人，有著獨特的電波。</p>
-					<div class="form-group">
-						<label for="">留言</label>
-						<input type="text" id="" name="" class="form-control">
+					<h2 class="wow animate__flipInX" data-wow-duration="3s" data-wow-offset="100">七詩無名(Nanashi Mumei)</h2>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">出生: 8月4日</p>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">身高: 156 公分</p>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">實況類型: <span class="badge badge-danger">模擬類遊戲</span> <span class="badge badge-warning">建設類遊戲</span> <span class="badge badge-info">節奏遊戲</span></p>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">介紹: 非常健忘的屬性（鳥的記憶）。可愛治癒的貓頭鷹，聲音十分可愛，擁有討人喜歡的呆萌特質，唱歌如排毒後的<a href="bs-20211222-holoEN-About-Gura.html" target="_blank">Gura</a>十分可愛，MC中是樹莓狂人，有著獨特的電波。</p>
+					<div>
+						<h4 class="font-weight-bold bg-info text-white text-center rounded-pill wow animate__flipInX" data-wow-duration="3s" data-wow-offset="100">初放送DEBUT</h4>
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/M2gwJ-7s0Zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<a href="#" class="btn btn-primary btn-block">送出</a>
 				</div>
 			</div>
 		</div>
@@ -92,6 +89,10 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

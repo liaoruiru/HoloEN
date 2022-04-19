@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
 
     <title>Ninomae Ina'nis</title>
     <style>
@@ -20,15 +21,12 @@
     	.mylist{
     		list-style: none;
     	}
-    	.img{
-    		height: 320px;
-    	}
     </style>
   </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand" href="index.html">
-	  	<img src="image/Hololive_ENGLISH_logo.png" width="130" height="52" alt="">
+	  	<img src="images/Hololive_ENGLISH_logo.png" width="130" height="52" alt="">
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -65,23 +63,22 @@
 	</nav>
 	<div class="banner bg-cover" style="background-image: url(images/holo-en.jpg);"></div>
 	<div class="container my-3">
-		<h3 class="text-danger font-weight-bold">|成員介紹<small class="text-muted font-weight-bold">Member</small></h3>
+		<h3 class="text-danger font-weight-bold wow animate__backInLeft" data-wow-duration="3s">|成員介紹<small class="text-muted font-weight-bold">Member</small></h3>
 		<div class="row mt-5">
 			<div class="col-md-8">
-				<div class="img bg-cover" style="background: url(images/Ina.jpg) no-repeat center top ; height: 560px;"></div>
+				<img src="images/Ina.jpg" alt="" class="img-fluid wow animate__zoomIn" data-wow-duration="3s" data-wow-offset="100">
 			</div>
 			<div class="col-md-4">
 				<div class="text">
-					<h1>一伊那爾栖(Watson Amelia)</h1>
-					<p>出生: 5月20日</p>
-					<p>身高: 157 公分</p>
-					<p>實況類型: <span class="badge badge-danger">繪圖</span> <span class="badge badge-secondary">遊戲</span> <span class="badge badge-warning">唱歌</span></p>
-					<p>介紹: 超越船長的神繪師，冷笑話大叔，用冷笑話破壞觀眾的SAN值。喜歡玩諧音梗，例如會把雜談說成 "Tako-bout" （日文「章魚」和英文 "talk about" 的結合）。</p>
-					<div class="form-group">
-						<label for="">留言</label>
-						<input type="text" id="" name="" class="form-control">
+					<h2 class="wow animate__flipInX" data-wow-duration="3s" data-wow-offset="100">一伊那爾栖(Ninomae Ina'nis)</h2>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">出生: 5月20日</p>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">身高: 157 公分</p>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">實況類型: <span class="badge badge-danger">繪圖</span> <span class="badge badge-secondary">遊戲</span> <span class="badge badge-warning">唱歌</span></p>
+					<p class="wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="100">介紹: 超越船長的神繪師，冷笑話大叔，用冷笑話破壞觀眾的SAN值。喜歡玩諧音梗，例如會把雜談說成 "Tako-bout" （日文「章魚」和英文 "talk about" 的結合）。</p>
+					<div>
+						<h4 class="font-weight-bold text-white text-center rounded-pill wow animate__flipInX" data-wow-duration="3s" data-wow-offset="100" style="background-color:  rgba(63, 0, 74, 0.8);">初放送DEBUT</h4>
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/ujCxiHpVYmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<a href="#" class="btn btn-primary btn-block">送出</a>
 				</div>
 			</div>
 		</div>
@@ -92,6 +89,10 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
