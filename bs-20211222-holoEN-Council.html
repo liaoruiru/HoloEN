@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+
     <title>HoloEN-Council</title>
     <style>
       .banner{
@@ -59,12 +61,12 @@
       </ul>
     </div>
   </nav>
-  <div class="banner bg-cover" style="background-image: url(images/holo-en-bar-1.jpg);"></div>
+  <div class="banner bg-cover" style="background-image: url(images/holoen-2.png);"></div>
     <div class="container my-3">
-      <h3 class="text-danger font-weight-bold">HoloCouncil<small class="text-muted font-weight-bold">議會</small></h3>
+      <h3 class="text-danger font-weight-bold wow animate__backInLeft" data-wow-duration="3s">|HoloCouncil<small class="text-muted font-weight-bold">議會</small></h3>
       <div class="row" id="mydata">
         <div class="col-md-4 mt-3 ">
-          <div class="card ">
+          <div class="card wow animate__rollIn" data-wow-duration="2s" data-wow-offset="100">
             <img src="img/Gura.jpg" class="card-md-top img-fluid" alt="...">
             <div class="card-body">
               <h5 class="card-title">所屬</h5>
@@ -86,6 +88,10 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
       <script>
         $(function(){
@@ -103,7 +109,7 @@
           console.log(data);
           $("#mydata").empty();
       for(var i=0; i < 20; i++){
-         var strHTML = '<div class="col-md-4 mt-3 "><div class="card h-100 "><img src="images/'+data[i].img+'"'+' class="card-md-top img-fluid" alt="..."><div class="card-body"><p class="card-text">身高:'+data[i].height+'</p><p class="card-text">生日:'+data[i].birthday+'</p><p class="card-text">繪師:'+data[i].design+'</p><p class="card-text">頻道:<a href="'+data[i].youtube+'"target="_blank">'+data[i].title+'</a></p><div><a href="'+data[i].herf+'" class="btn btn-primary" target="_blank">查看</a></div></div></div></div>';
+         var strHTML = '<div class="col-md-4 mt-3"><div class="card h-100 wow animate__rollIn" data-wow-duration="2s" data-wow-offset="150"><img src="images/'+data[i].img+'"'+' class="card-md-top img-fluid" alt="..."><div class="card-body"><p class="card-text">身高:'+data[i].height+'</p><p class="card-text">生日:'+data[i].birthday+'</p><p class="card-text">繪師:'+data[i].design+'</p><p class="card-text">頻道:<a href="'+data[i].youtube+'"target="_blank">'+data[i].title+'</a></p><div><a href="'+data[i].herf+'" class="btn btn-primary" target="_blank">查看</a></div></div></div></div>';
         
         $("#mydata").append(strHTML);
       }
